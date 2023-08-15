@@ -19,6 +19,7 @@ public class StudentController {
 	
 	@PostMapping(value="/addDetail")
 	public String addDetail(@RequestBody Student s) throws AgeNotEligibleException {
+		System.out.println("Git Hub");
 		return studSer.addDetail(s);
 	}
 	@GetMapping(value="/getDetailList")
